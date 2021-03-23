@@ -1,10 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
 .App {
 margin:auto;
 display: block;
-
 }
 
- .header img{
+p{
+  margin-left: 35%;
+}
+
+form{
+  padding-bottom: 20px;
+  margin-top: 40px;
+  margin-left: 35%;
+}
+
+label{
+  margin-bottom: 20px;
+  font-family:  "Josefin Sans";
+  color: rgba(189, 128, 15, 0.945);
+  font-weight: 800;
+  cursor:pointer;
+}
+
+
+.header img{
   height: 40px; 
   width: 40px;
   margin: 0 16px;
@@ -37,16 +56,19 @@ display: block;
 
 .toolbar{
   display: flex;
-  margin: 82px auto 32px;
-  padding: 0 16px;
-  max-width: 960px;
+  margin: 62px auto 32px;
+  padding: 10px 16px;
+  max-width: 700px;
   flex-direction: row;
+  font-family:  "Josefin Sans";
   }
 
   .toolbar a{
     border: cornflowerblue;
     border-style: solid;
     padding: 0 10px;
+    color: rgba(189, 128, 15, 0.945);
+    
   }
   
 .toolbar a:hover {
@@ -54,5 +76,6 @@ display: block;
   opacity: 0.8;
   border:#7d35f1;
   border-style: solid;
-  box-shadow: 1px 3px 5px #000000; 
+  box-shadow: 5px 5px 5px #000000; 
+  
 }

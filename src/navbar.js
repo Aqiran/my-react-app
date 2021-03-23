@@ -24,6 +24,8 @@ const Navbar = () => {
             <img src="https://cdn3.iconfinder.com/data/icons/universal-27/76/icon-29-512.png" alt="cap"/>iPORTAL
             </a>
         </div>
+
+        <p>Welcome to the BSV Non RPA Tools Portal</p>
         
         </div>
      );
