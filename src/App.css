@@ -1,11 +1,20 @@
 .App {
-  text-align: center;
+margin:auto;
+display: block;
+
 }
 
-img{
+ .header img{
   height: 40px; 
   width: 40px;
   margin: 0 16px;
+}
+
+.links img{
+  height: 30px;
+  width: 30px;
+  margin-right: 0;
+  margin-bottom: 0;
 }
 
 .header {
@@ -19,7 +28,31 @@ img{
   font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+.toolbar .links {
+  margin-right: 40px;
+  align-content: center;
+  line-height: 24px;
+  font-size: 14px;
 }
 
+.toolbar{
+  display: flex;
+  margin: 82px auto 32px;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: row;
+  }
+
+  .toolbar a{
+    border: cornflowerblue;
+    border-style: solid;
+    padding: 0 10px;
+  }
+  
+.toolbar a:hover {
+  color: #7d35f1;
+  opacity: 0.8;
+  border:#7d35f1;
+  border-style: solid;
+  box-shadow: 1px 3px 5px #000000; 
+}
