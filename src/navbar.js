@@ -8,20 +8,20 @@ const Navbar = () => {
 
         <div className="toolbar">
             <a className="links" href="/">
-            <img src="https://cdn3.iconfinder.com/data/icons/universal-27/76/icon-29-512.png" alt="cap"/>HOME
+            <img src="https://cdn3.iconfinder.com/data/icons/universal-27/76/icon-29-512.png" alt="cap"/>Home
             </a>
             
             <a className="links" href="/">
             <img src="https://cdn3.iconfinder.com/data/icons/universal-27/76/icon-29-512.png" alt="cap"/>
-            TOOLS
+            Tools
             </a>
 
             <a className="links" href="/">
-            <img src="https://cdn3.iconfinder.com/data/icons/universal-27/76/icon-29-512.png" alt="cap"/>ENGAGEMENTS
+            <img src="https://cdn3.iconfinder.com/data/icons/universal-27/76/icon-29-512.png" alt="cap"/>Engagements
             </a>
 
             <a className="links" href="/">
-            <img src="https://cdn3.iconfinder.com/data/icons/universal-27/76/icon-29-512.png" alt="cap"/>iPORTAL
+            <img src="https://cdn3.iconfinder.com/data/icons/universal-27/76/icon-29-512.png" alt="cap"/>iPortal
             </a>
         </div>
 
