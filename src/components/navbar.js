@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import Icon from '@material-ui/core/Icon';
 
 const Navbar = () => {
     return (
@@ -10,21 +11,24 @@ const Navbar = () => {
 
             <div className="toolbar">
                 <Link className="links" to="/home">
-                    <img src="https://cdn3.iconfinder.com/data/icons/universal-27/76/icon-29-512.png" alt="cap" />Home
-            </Link>
+                    <Icon><span class="material-icons">school</span></Icon>Home
+                    <Icon><span class="material-icons">arrow_forward_ios</span></Icon>
+                </Link>
 
                 <Link className="links" to="/">
-                    <img src="https://cdn3.iconfinder.com/data/icons/universal-27/76/icon-29-512.png" alt="cap" />
-            Tools
-            </Link>
+                    <Icon><span class="material-icons">school</span></Icon>Tools
+                    <Icon><span class="material-icons">arrow_forward_ios</span></Icon>
+                </Link>
 
                 <Link className="links" to="/">
-                    <img src="https://cdn3.iconfinder.com/data/icons/universal-27/76/icon-29-512.png" alt="cap" />Engagements
-            </Link>
+                    <Icon><span class="material-icons-sharp">code</span></Icon>Engagements
+                    <Icon><span class="material-icons">arrow_forward_ios</span></Icon>
+                </Link>
 
                 <Link className="links" to="/">
-                    <img src="https://cdn3.iconfinder.com/data/icons/universal-27/76/icon-29-512.png" alt="cap" />iPortal
-            </Link>
+                    <Icon><span class="material-icons-sharp">whatshot</span></Icon>iPortal
+                    <Icon><span class="material-icons">arrow_forward_ios</span></Icon>
+                </Link>
             </div>
 
             <p>Welcome to the BSV Non RPA Tools Portal</p>
