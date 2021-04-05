@@ -48,7 +48,7 @@ export default function EngageTable() {
 
     const loadUsers = async () => {
         const res = await axios.get(
-            "https://bsvnonrpa-python.herokuapp.com/api/tools"
+            "https://bsvnonrpa-python.herokuapp.com/api/engagements"
         );
         setUsers(res.data);
     };
@@ -71,9 +71,9 @@ export default function EngageTable() {
                 <Table className={classes.table} aria-label="customized table">
                     <TableHead>
                         <TableRow>
-                            <StyledTableCell>Tool</StyledTableCell>
+                            <StyledTableCell>Engagements</StyledTableCell>
                             <StyledTableCell>Process</StyledTableCell>
-                            <StyledTableCell>MainFeatures</StyledTableCell>
+                            <StyledTableCell>Regions</StyledTableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -81,9 +81,9 @@ export default function EngageTable() {
                             .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                             .map((user) => (
                                 <StyledTableRow>
-                                    <StyledTableCell>{user.ToolName}</StyledTableCell>
+                                    <StyledTableCell>{user.Engagement_x}</StyledTableCell>
                                     <StyledTableCell>{user.Process}</StyledTableCell>
-                                    <StyledTableCell>{user.Features}</StyledTableCell>
+                                    <StyledTableCell>{user.Region}</StyledTableCell>
                                 </StyledTableRow>
                             ))}
                     </TableBody>
