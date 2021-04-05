@@ -1,47 +1,18 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  .row {
-    max-width: 1000px;
-    display: flex;
-    margin: 32px auto 32px;
-  }
-  
-  .column {
-    flex: 50%;
-    padding: 5px;
-    padding-right: 10px;
-  }
-  
-  table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 90%;
-    border: 1px solid #ddd;
-    margin: 0 1px 0 20px;
-  }
-  
-   td {
-    text-align: left;
-    padding: 16px;
-  }
+.row {
+  display: flex;
+  margin-left: -5px;
+  margin-right: -5px;
+  padding-left: 100px;
+}
 
-  th{
-    text-align: left;
-    padding: 16px;
-    background-color: #f8f8f8;
-    border-bottom: darkgrey;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #fcfcfc;
-    border-bottom: 1px solid darkgrey;
-  }
+.column {
+  flex: 50%;
+  padding: 5px;
+}
 
-  tr:nth-child(odd){
-      background-color: #ffffff;
-      border-bottom: 1px solid darkgrey;
-  }
-  
-  
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
