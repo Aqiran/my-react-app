@@ -10,12 +10,13 @@ p{
 
 form{
   padding-bottom: 20px;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-left: 35%;
 }
 
 label{
-  margin-bottom: 20px;
+  margin-bottom: 20%;
+  margin-right: 70%;
   font-family:  "Josefin Sans";
   color: rgba(189, 128, 15, 0.945);
   font-weight: 800;
@@ -29,12 +30,6 @@ label{
   margin: 0 16px;
 }
 
-.links img{
-  height: 30px;
-  width: 30px;
-  margin-right: 0;
-  margin-bottom: 0;
-}
 
 .header {
   background-color:#1976d2;
@@ -51,7 +46,7 @@ label{
   margin-right: 40px;
   align-content: center;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .toolbar{
