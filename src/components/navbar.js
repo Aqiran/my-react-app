@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import Icon from '@material-ui/core/Icon';
 import SchoolSharpIcon from '@material-ui/icons/SchoolSharp';
 import CodeSharpIcon from '@material-ui/icons/CodeSharp';
 import WhatshotSharpIcon from '@material-ui/icons/WhatshotSharp';
@@ -19,7 +18,7 @@ const Navbar = () => {
 
                 <Link className="links" to="/"><SchoolSharpIcon />Tools</Link>
 
-                <Link className="links" to="/"><CodeSharpIcon />Engagements
+                <Link className="links" to="/engagements"><CodeSharpIcon />Engagements
                     </Link>
 
                 <Link className="links" to="/"><WhatshotSharpIcon />

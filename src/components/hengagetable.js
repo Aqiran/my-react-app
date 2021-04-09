@@ -3,8 +3,6 @@ import { withStyles, makeStyles } from "@material-ui/core/styles";
 import {
     Container,
     Paper,
-    Box,
-    Typography,
     TableRow,
     TableContainer,
     Table,
