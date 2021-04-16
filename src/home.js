@@ -1,15 +1,18 @@
-import ToolTable from './components/htooltable';
-import EngageTable from './components/hengagetable';
+import HtoolTable from './components/htooltable';
+import HengageTable from './components/hengagetable';
 import './components/home.css'
+
+//Htooltable -> Table of tools on Homescreen
+//Hengagetable -> Table of Engagements on Homescreen 
 
 const Home = () => {
     return (
         <div className="row">
             <div className="col">
-                <ToolTable />
+                <HtoolTable />
             </div>
             <div className="col">
-                <EngageTable />
+                <HengageTable />
             </div>
         </div>);
 }

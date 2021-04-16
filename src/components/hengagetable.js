@@ -40,15 +40,15 @@ const useStyles = makeStyles({
 
 export default function EngageTable() {
     const classes = useStyles();
-    const [users, setUsers] = useState([]);
+    const [engagements, setEngagements] = useState([]);
     const [page, setPage] = useState(0);
     const [rowsPerPage, setRowsPerPage] = useState(10);
 
-    const loadUsers = async () => {
+    const loadEngagements = async () => {
         const res = await axios.get(
             "https://bsvnonrpa-python.herokuapp.com/api/engagements"
         );
-        setUsers(res.data);
+        setEngagements(res.data);
     };
 
     const onChangePage = (event, nextPage) => {
@@ -60,7 +60,7 @@ export default function EngageTable() {
     };
 
     useEffect(() => {
-        loadUsers();
+        loadEngagements();
     }, []);
 
     return (
@@ -75,20 +75,20 @@ export default function EngageTable() {
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {users
+                        {engagements
                             .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-                            .map((user) => (
+                            .map((engagement) => (
                                 <StyledTableRow>
-                                    <StyledTableCell>{user.Engagement_x}</StyledTableCell>
-                                    <StyledTableCell>{user.Process}</StyledTableCell>
-                                    <StyledTableCell>{user.Region}</StyledTableCell>
+                                    <StyledTableCell>{engagement.Engagement_x}</StyledTableCell>
+                                    <StyledTableCell>{engagement.Process}</StyledTableCell>
+                                    <StyledTableCell>{engagement.Region}</StyledTableCell>
                                 </StyledTableRow>
                             ))}
                     </TableBody>
                 </Table>
                 <TablePagination
                     rowsPerPageOptions={[10, 20, 30]}
-                    count={users.length}
+                    count={engagements.length}
                     rowsPerPage={rowsPerPage}
                     page={page}
                     onChangePage={onChangePage}

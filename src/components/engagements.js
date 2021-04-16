@@ -6,21 +6,21 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Engagements = () => {
 
-    const [users, setUsers] = useState([]);
+    const [engagements, setEngagements] = useState([]);
 
-    const loadUsers = async () => {
+    const loadEngagements = async () => {
         try {
             const res = await axios.get(
                 "https://bsvnonrpa-python.herokuapp.com/api/tools"
             );
-            setUsers(res.data);
+            setEngagements(res.data);
         } catch (error) {
             console.log(error);
         }
     };
 
     useEffect(() => {
-        loadUsers();
+        loadEngagements();
     }, []);
 
 
@@ -29,13 +29,13 @@ const Engagements = () => {
         console.log('The link was clicked.');
     }
 
-    const renderCard = (user, index) => {
+    const renderCard = (engagement, index) => {
         return (
             <Card style={{ width: "18rem" }} key={index} className="box" onClick={handleClick}>
                 <Card.Img variant="top" src={"https://builtin.com/sites/default/files/styles/medium/public/2018-08/artificial-intelligence-companies.jpg"} />
                 <Card.Body>
-                    <Card.Title>{user.ToolName}</Card.Title>
-                    <Card.Subtitle>{user.VendorName}</Card.Subtitle>
+                    <Card.Title>{engagement.ToolName}</Card.Title>
+                    <Card.Subtitle>{engagement.VendorName}</Card.Subtitle>
                 </Card.Body>
             </Card>
         );
@@ -43,7 +43,7 @@ const Engagements = () => {
 
     return (
         <Container>
-            <div className="grid">{users.map(renderCard)}</div>;
+            <div className="grid">{engagements.map(renderCard)}</div>;
         </Container>
     );
 }

@@ -40,15 +40,15 @@ const useStyles = makeStyles({
 
 export default function ToolTable() {
   const classes = useStyles();
-  const [users, setUsers] = useState([]);
+  const [tools, setTools] = useState([]);
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(10);
 
-  const loadUsers = async () => {
+  const loadTools = async () => {
     const res = await axios.get(
       "https://bsvnonrpa-python.herokuapp.com/api/tools"
     );
-    setUsers(res.data);
+    setTools(res.data);
   };
 
   const onChangePage = (event, nextPage) => {
@@ -60,7 +60,7 @@ export default function ToolTable() {
   };
 
   useEffect(() => {
-    loadUsers();
+    loadTools();
   }, []);
 
   return (
@@ -75,20 +75,20 @@ export default function ToolTable() {
             </TableRow>
           </TableHead>
           <TableBody>
-            {users
+            {tools
               .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-              .map((user) => (
+              .map((tool) => (
                 <StyledTableRow>
-                  <StyledTableCell>{user.ToolName}</StyledTableCell>
-                  <StyledTableCell>{user.Process}</StyledTableCell>
-                  <StyledTableCell>{user.Features}</StyledTableCell>
+                  <StyledTableCell>{tool.ToolName}</StyledTableCell>
+                  <StyledTableCell>{tool.Process}</StyledTableCell>
+                  <StyledTableCell>{tool.Features}</StyledTableCell>
                 </StyledTableRow>
               ))}
           </TableBody>
         </Table>
         <TablePagination
           rowsPerPageOptions={[10, 20, 30]}
-          count={users.length}
+          count={tools.length}
           rowsPerPage={rowsPerPage}
           page={page}
           onChangePage={onChangePage}
