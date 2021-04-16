@@ -1,22 +1,21 @@
- const customStyle={                                       //INLINE STYLE
-        marginBottom:"10px"
- }
+const customStyle = {                                       //INLINE STYLE
+    marginBottom: "10px"
+}
 
 const Login = () => {
     return (
         <form>
             <label>
                 Username:
-            <input type="text" name="name" style={customStyle}/>
+            <input type="text" name="name" style={customStyle} />
             </label>
             <label>
-            <br/>
-                Password : 
+                Password :
             <input type="password" name="password" />
-            <br/>
+                <br />
             </label>
-            <br/>
-            <input type="submit" value="Submit" />
+            <br />
+            <input type="submit" value="Submit" className="submitbutton" />
         </form>
     );
 }

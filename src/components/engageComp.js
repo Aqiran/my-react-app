@@ -10,6 +10,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import TextareaAutosize from "@material-ui/core/TextareaAutosize";
 
 const drawerWidth = 240;
+const drawerMargin = 60;
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -18,10 +19,12 @@ const useStyles = makeStyles((theme) => ({
 
     drawer: {
         width: drawerWidth,
-        flexShrink: 0
+        flexShrink: 0,
+        marginTop: drawerMargin
     },
     drawerPaper: {
-        width: drawerWidth
+        width: drawerWidth,
+        marginTop: drawerMargin
     },
     drawerContainer: {
         overflow: "auto"
