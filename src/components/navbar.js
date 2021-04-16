@@ -14,11 +14,11 @@ const Navbar = () => {
             </div>
 
             <div className="toolbar">
-                <Link className="links" to="/home"><SchoolSharpIcon />Home</Link>
+                <Link className="links" to="/Home"><SchoolSharpIcon />Home</Link>
 
                 <Link className="links" to="/"><SchoolSharpIcon />Tools</Link>
 
-                <Link className="links" to="/engagements"><CodeSharpIcon />Engagements
+                <Link className="links" to="/Engagements"><CodeSharpIcon />Engagements
                     </Link>
 
                 <Link className="links" to="/"><WhatshotSharpIcon />
