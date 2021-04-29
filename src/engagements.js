@@ -39,7 +39,7 @@ const Engagements = () => {
                         <Card.Img
                             variant="top"
                             src={`/images/${engagement.ToolName}.png`}
-                            alt={engagement.ToolName}
+                            alt="TOOL IMAGE HERE"
 
                         />
                         <Card.Body>
